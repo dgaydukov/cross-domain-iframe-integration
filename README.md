@@ -26,7 +26,7 @@ iframe
 
 ## Problem
 
-Please read [Integration Problems](https://github.com/dgaydukov/react-vs-angular/blob/master/problems.md) for more details
+Please read [Integration Problems](https://github.com/dgaydukov/cross-domain-iframe-integration/blob/master/problems.md) for more details
 
 
 ## Built With
