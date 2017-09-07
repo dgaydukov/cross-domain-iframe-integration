@@ -14,7 +14,7 @@ Suppose you intergrate your iframe into another website, and you need solve foll
 * New page in Iframe, move to top in website
 
 
-## Solution
+## Solutions
 1) After Auth in website, pass auth data to iframe with `postMessage`
 2) If you detect url forwarding, reload iframe by changing url, or If iframe is [spa](https://en.wikipedia.org/wiki/Single-page_application), then pass url to iframe with `postMessage`
 3) After success auth, return cookie to website with `postMessage`
