@@ -32,7 +32,8 @@ Please read [Integration Problems](https://github.com/dgaydukov/cross-domain-ifr
 
 ## Built With
 
-I use vanillaJs, because the point is to show integration problems1
+I use vanillaJs, because i want a project to be versatile, and not limited to any frontend frameworks.
+As a server i use node.js express
 
 
 ## Authors

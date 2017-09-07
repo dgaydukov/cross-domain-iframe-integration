@@ -3,6 +3,21 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     console.log("iframe loaded");
+    parent.postMessage({ready: true}, "*");
+    window.addEventListener("message", event=>{
+        if(event.origin == "http://127.0.0.1:3321"){
+            console.log("new message", event.data);
+            if(event.data.login){
+                console.log("login user");
+            }
+            if(event.data.logout){
+                console.log("logout user");
+            }
+            if(event.data.path){
+                console.log("change iframe path");
+            }
+        }
+    });
 
     /*
     height change
