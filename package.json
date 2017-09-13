@@ -7,11 +7,13 @@
     "cross-env": "^5.0.5",
     "express": "^4.15.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "npm-run-all": "^4.1.1"
+  },
   "scripts": {
-    "start": "npm run website & npm run iframe &",
-    "website": "cross-env PORT=3321 node website/server/index.js",
-    "iframe": "cross-env PORT=3322 node iframe/server/index.js"
+    "start": "npm-run-all --parallel start:*",
+    "start:website": "cross-env PORT=3321 node website/server/index.js",
+    "start:iframe": "cross-env PORT=3322 node iframe/server/index.js"
   },
   "author": "",
   "license": "ISC"
